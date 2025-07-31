@@ -1,0 +1,60 @@
+.cardz {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 30px;
+  border: 3px solid #eb1515;
+  width: 200px;
+  position: relative;
+}
+.cardz h2 {
+  color: blue;
+}
+
+@keyframes spinIn {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  animation: spinIn 2s ease-in-out forwards;
+}
+
+.button {
+  background: lightblue;
+  padding: 10px;
+  transition: background 0.5s ease;
+}
+.button:hover {
+  background: coral;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.bokz {
+  width: 100px;
+  height: 100px;
+  background: coral;
+  animation: cobaAja 0.9s infinite alternate-reverse;
+}
+
+@keyframes cobaAja {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50px);
+  }
+}
